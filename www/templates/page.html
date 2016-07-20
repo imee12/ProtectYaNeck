@@ -1,0 +1,25 @@
+<ion-view hide-nav-bar="true" title="Page" id="page1" class=" ">
+    <ion-content padding="true" class="has-header">
+    <!--   <ion-header-bar class="bar-positive"> -->
+
+        <h1 id="page-heading1" style="color:#E2A42B; text-align: center; font-family: Montserrat" class=" ">Protect Ya Neck!</h1>
+    <!-- </ion-header-bar> -->
+<!--         <li ng-repeat="i in list | orderBy:random">{{i}}</li>
+-->
+    <div  style="height: 45px"></div>
+
+  <div ng-repeat="i in rankedList | orderBy:'rank' | limitTo: 1">
+  <div class="col qBlock">{{i.item.question}}</div>
+  <div id="answerIt" class="qBlock hide">{{i.item.answer}}</div>
+  <div  style="height: 15px"></div>
+    <div ng-click="showMe()" class="qbuttonShow">gimme the answer so i can take it away</div>
+  </div>
+  <div  style="height: 25px"></div>
+
+  <ion-footer>
+    <div ng-click="askMe()" class="qbutton">ask me a question</div>
+  </ion-footer>
+
+      <!--   <button ng-click="askMe()"id="page-button1" class=" button button-positive  button-block ">Ask Me a Question Son</button> -->
+    </ion-content>
+</ion-view>
