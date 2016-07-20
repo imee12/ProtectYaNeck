@@ -10,6 +10,13 @@
 
   <div ng-repeat="i in rankedList | orderBy:'rank' | limitTo: 1">
   <div class="col qBlock">{{i.item.question}}</div>
+  <div class="col qBlock">{{i.item.question1}}</div>
+  <div class="col qBlock">{{i.item.question2}}</div>
+  <div class="col qBlock">{{i.item.question3}}</div>
+  <div class="col qBlock">{{i.item.question4}}</div>
+  <div class="col qBlock">{{i.item.question5}}</div>
+  <div class="col qBlock">{{i.item.question6}}</div>
+  <div  style="height: 5px"></div>
   <div id="answerIt" class="qBlock hide">{{i.item.answer}}</div>
   <div  style="height: 15px"></div>
     <div ng-click="showMe()" class="qbuttonShow">gimme the answer so i can take it away</div>

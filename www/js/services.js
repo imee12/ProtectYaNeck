@@ -69,12 +69,163 @@ angular.module('app.services', [])
   answer: 'Alert, Confirm, and Prompt'
 },{
   id: 3,
-  question: 'What is negative infinity?',
-  answer: 'Negative Infinity is a number in JavaScript which can be derived by dividing negative number by zero.'
+  question: 'What is the use of Void(0)?',
+  answer: 'Void(0) is used to prevent the page from refreshing and parameter “zero” is passed while calling. Void(0) is used to call another method without refreshing the page.'
 },{
   id: 3,
-  question: 'What is negative infinity?',
-  answer: 'Negative Infinity is a number in JavaScript which can be derived by dividing negative number by zero.'
+  question: 'How can a page be forced to load another page in JavaScript?',
+  answer: 'location.href="http://newhost/newpath/newfile.html"'
+},{
+  id: 3,
+  question: 'What is the data type of variables of in JavaScript?',
+  answer: 'All variables in the JavaScript are object data types.'
+},{
+  id: 3,
+  question: 'What are escape characters?',
+  answer: 'Escape characters (Backslash) is used when working with special characters like single quotes, double quotes, apostrophes and ampersands. Place backslash before the characters to make it display.'
+},{
+  id: 3,
+  question: 'What are JavaScript Cookies?',
+  answer: 'Cookies are the small test files stored in a computer and it gets created when the user visits the websites to store information that they need. Example could be User Name details and shopping cart information from the previous visits.'
+},{
+  id: 3,
+  question: 'Explain what is pop()method in JavaScript?',
+  answer: 'The pop() method is similar as the shift() method but the difference is that the Shift method works at the start of the array.  Also the pop() method take the last element off of the given array and returns it. The array on which is called is then altered. Example: var cloths = [“Shirt”, “Pant”, “TShirt”];cloths.pop(); Now cloth becomes Shirt,Pant'
+},{
+  id: 3,
+  question: ' What is break and continue statements?',
+  answer: 'Break statement exits from the current loop. Continue statement continues with next statement of the loop.'
+},{
+  id: 3,
+  question: 'What are the two basic groups of dataypes in JavaScript?',
+  answer: 'Primitive, Reference types. Primitive types are number and Boolean data types. Reference types are more complex types like strings and dates.'
+},{
+  id: 3,
+  question: 'How generic objects can be created?',
+  answer: 'var I = new object();'
+},{
+  id: 3,
+  question: 'What is the use of type of operator?',
+  answer: '‘Typeof’ is an operator which is used to return a string description of the type of a variable.'
+},{
+  id: 3,
+  question: 'Which keywords are used to handle exceptions?',
+  answer: 'Try… Catch—finally is used to handle exceptions in the JavaScript'
+},{
+  id: 3,
+  question: 'Which keyword is used to print the text in the screen?',
+  answer: 'document.write(“Welcome”) is used to print the text – Welcome in the screen.'
+},{
+  id: 3,
+  question: 'What is variable typing?',
+  answer: 'Variable typing is used to assign a number to a variable and then assign string to the same variable. Example is as follows: i= 8; i=”john”;'
+},{
+  id: 3,
+  question: 'What are the different types of errors in JavaScript?',
+  answer: 'Load time errors: Errors which come up when loading a web page like improper syntax errors are known as Load time errors and it generates the errors dynamically.Run time errors: Errors that come due to misuse of the command inside the HTML language.Logical Errors: These are the errors that occur due to the bad logic performed on a function which is having different operation.'
+},{
+  id: 3,
+  question: 'What is unshift method in JavaScript?',
+  answer: 'Unshift method is like push method which works at the beginning of the array. This method is used to prepend one or more elements to the beginning of the array.'
+},{
+  id: 3,
+  question: 'How are object properties assigned?',
+  answer: 'obj["class"] = 12; obj.class = 12;'
+},{
+  id: 3,
+  question: 'Explain window.onload and onDocumentReady?',
+  answer: 'The onload function is not run until all the information on the page is loaded. This leads to a substantial delay before any code is executed.'
+},{
+  id: 3,
+  question: 'How will you explain closures in JavaScript? When are they used?',
+  answer: 'Closure is a locally declared variable related to a function which stays in memory when the function has returned. | function greeter(name, age) {var message = name + " says howdy!! He is " + age + " years old"; return function greet() {console.log(message)};} | // Generate the closure: var JamesGreeter = greeter("James", 23); | // Use the closure: JamesGreeter();',
+},{
+  id: 3,
+  question: 'What is the drawback of creating true private methods in JavaScript?',
+  answer: 'One of the drawbacks of creating true private methods in JavaScript is that they are very memory-inefficient, as a new copy of the method would be created for each instance.'
+},{
+  id: 3,
+  question: 'What will be the output of the code below?',
+  question1: ' var y = 1;',
+  question2: 'if (function f(){}) {',
+  question3: 'y += typeof f;',
+  question4: '}',
+  question5: 'console.log(y)',
+  answer: '1undefined. The if condition statement evaluates using eval, so eval(function f(){}) returns function f(){} (which is true). Therefore, inside the if statement, executing typeof f returns undefined because the if statement code executes at run time, and the statement inside the if condition is evaluated during run time.'
+},{
+  id: 3,
+  question: 'What will be the output of the code below?',
+  question1: 'var output = (function(x){',
+  question2: 'delete x;',
+  question3: 'return x;',
+  question4: '})(0);',
+  question5: ' console.log(output);',
+  answer: 'The output would be 0. The delete operator is used to delete properties from an object. Here x is not an object but a local variable. delete operators don\'t affect local variables.'
+},{
+  id: 3,
+  question: 'What will be the output of the code below?',
+  question1: 'var x = 1;',
+  question2: 'var output = (function(){',
+  question3: 'delete x;',
+  question4: 'return x;',
+  question5: ' })();',
+  question6: 'console.log(output);',
+  answer: 'The output would be 0. The delete operator is used to delete properties from an object. Here x is not an object but a local variable. delete operators don\'t affect local variables.'
+},{
+  id: 3,
+  question: 'What will be the output of the code below?',
+  question1: 'var x = 1;',
+  question2: 'var output = (function(){',
+  question3: 'delete x;',
+  question4: 'return x;',
+  question5: ' })();',
+  question6: 'console.log(output);',
+  answer: 'The output would be 0. The delete operator is used to delete properties from an object. Here x is not an object but a local variable. delete operators don\'t affect local variables.'
+},{
+  id: 3,
+  question: '',
+  answer: ''
+},{
+  id: 3,
+  question: '',
+  answer: ''
+},{
+  id: 3,
+  question: '',
+  answer: ''
+},{
+  id: 3,
+  question: '',
+  answer: ''
+},{
+  id: 3,
+  question: '',
+  answer: ''
+},{
+  id: 3,
+  question: '',
+  answer: ''
+},{
+  id: 3,
+  question: '',
+  answer: ''
+},{
+  id: 3,
+  question: '',
+  answer: ''
+},{
+  id: 3,
+  question: '',
+  answer: ''
+},{
+  id: 3,
+  question: '',
+  answer: ''
+},{
+  id: 3,
+  question: '',
+  answer: ''
+
 
   }];
 
